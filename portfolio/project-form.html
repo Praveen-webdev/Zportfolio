@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project details form</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="form-page">
+    <article class="container form-container">
+      <fieldset >
+        <legend>Personal & Project details</legend>
+        <form action="submit.html" method="GET">
+          <label class="form-label">
+            Name:<input
+              class="input-field"
+              id="fname"
+              name="fname"
+              type="text"
+              required
+          /></label>
+          <label class="form-label"
+            >E-mail:<input
+              class="input-field"
+              id="email"
+              name="email"
+              type="email"
+              required
+          /></label>
+          <label class="form-label"
+            >Mobile number:<input
+              class="input-field"
+              id="tel"
+              name="tel"
+              type="tel"
+              required
+          /></label>
+          <label class="form-label"
+            >Project description:
+            <textarea 
+              class="input-field textarea"
+              name="project-description"
+              placeholder="Describe your requirements"
+            ></textarea>
+          </label>
+          <label class="form-label"
+            >Budget in <small>&#8377</small><input
+              class="input-field"
+              id="budget"
+              name="budget"
+              type="number"
+              min="1500"
+              step="100"
+              required
+          /></label>
+          <div class="radio-container ">
+          <span class="radio-title">Design style:</span>
+          <span class="radios">
+            <input type="radio" id="minimal" name="style" />
+            <label for="minimal">Minimal</label>
+            <input type="radio" id="modern" name="style" />
+            <label for="modern">Modern</label>
+            <input type="radio" id="vintage" name="style" />
+            <label for="vintage">Vintage</label>
+          </span>
+        </div>
+        <div class="checkbox-container ">
+          <span class="checkbox-title"> Expected technologies: </span>
+          <span class="checkboxes">
+            <input type="checkbox" id="html" name="tech" />
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="tech" />
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="tech" />
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" id="wordpress" name="tech" checked />
+            <label for="wordpress">Wordpress</label>
+          </span>
+        </div>
+          <label class="form-label"
+            >Upload project samples:<input
+              class="input-field"
+              id="file"
+              name="file"
+              type="file"
+          /></label>
+          <button class="btn btn-alt btn-centerx"><a>Submit</a></button>
+        </form>
+      </fieldset>
+    </article>
+  </body>
+</html>

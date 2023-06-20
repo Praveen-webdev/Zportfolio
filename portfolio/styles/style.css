@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "rasa", Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(242, 242, 242);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.btn-alt {
+  color: whitesmoke;
+  margin: 0.6em;
+  background: rgb(175, 175, 175);
+  background: linear-gradient(
+    28deg,
+    rgba(175, 175, 175, 1) 27%,
+    rgba(115, 103, 111, 1) 73%
+  );
+}
+.btn-alt:hover {
+  background: rgb(115, 103, 111);
+  background: linear-gradient(
+    38deg,
+    rgba(115, 103, 111, 1) 32%,
+    rgba(175, 175, 175, 1) 67%
+  );
+}
+.btn-outline {
+  border: 2px solid grey;
+}
+.btn-outline:hover {
+  background-color: grey;
+  color: white;
+}
+.btn-centerx {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.groovy {
+  background-image: url(../assets/img/9uwk.gif);
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; /*partial support for chrome*/
+  color: transparent;
+}
+/* Page */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.spacer {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Header */
+header {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: #fdfdf8;
+}
+.coloured-logo {
+  margin-left: 0.5rem;
+  display: inline-block;
+  line-height: 3.25rem;
+  letter-spacing: 0.2em;
+}
+.coloured-logo span:nth-of-type(1) {
+  color: red;
+}
+.coloured-logo span:nth-of-type(2) {
+  color: greenyellow;
+  position: relative;
+  top: -3px;
+}
+.coloured-logo span:nth-of-type(3) {
+  color: rgb(0, 38, 255);
+  position: relative;
+  top: 1px;
+}
+.coloured-logo span:nth-of-type(4) {
+  color: yellow;
+  position: relative;
+  top: -2px;
+}
+.primary-nav {
+  text-transform: uppercase;
+  float: right;
+  line-height: 3.25rem;
+}
+.primary-nav li {
+  margin: 0 1.2rem;
+  cursor: pointer;
+}
+.primary-nav li:hover,
+.primary-nav li:hover a {
+  background-color: rgb(242, 242, 242);
+  color: grey;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  color: black;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf {
+  clear: both;
+}
+.cf:after {
+  clear: both;
+}
+
+/* profile section */
+.profile-img {
+  width: 10rem;
+  float: left;
+}
+.profile-description {
+  text-align: justify;
+  width: 55%;
+  line-height: 1.5em;
+  float: left;
+  margin-left: 1.7rem;
+}
+.social-logo {
+  width: 1.5em;
+}
+
+/* Services  & Projects*/
+.hero {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.hero-title {
+  background: rgb(232, 231, 232);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 231, 232, 1) 0%,
+    rgba(146, 136, 143, 1) 23%,
+    rgba(119, 105, 114, 1) 47%,
+    rgba(56, 35, 49, 1) 84%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-origin: content-box;
+}
+.service-logo {
+  width: 4em;
+}
+.layout {
+}
+.col-2,
+.col-3 {
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.col-2 {
+  margin-right: 1%;
+  width: 49.5%;
+}
+.col-2:last-of-type {
+  margin-right: 0;
+}
+.col-3 {
+  margin-right: 1%;
+  width: 32.6%;
+}
+.col-3:last-of-type {
+  margin-right: 0;
+}
+.portfolio-img {
+  width: 100%;
+  height: 15rem;
+}
+
+/* Tech stacks */
+.techstack li {
+  margin-left: 3rem;
+  background: url(../assets/logo/icons8-right-arrow.gif) 0 0 no-repeat;
+  background-size: auto 1.2em;
+  padding-left: 1.7em;
+}
+
+/* project  form  */
+.form-page {
+  background: url(../assets/img/form-line-oval-light-1053822-wallhere.com.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.form-container {
+  margin-top: 10%;
+  border-radius: 0 20px 0 20px;
+  background: #e0e0e0;
+}
+fieldset {
+  border: none;
+}
+.form-label {
+  display: block;
+}
+.input-field {
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+  width: 30%;
+}
+.form-label,
+.checkbox-container,
+.radio-container {
+  margin: 1.4rem 3rem;
+  position: relative;
+}
+.input-field,
+.checkboxes,
+.radios {
+  position: absolute;
+  left: 15rem;
+}
+
+/* footer */
+footer {
+  font-size: 1.1rem;
+}
